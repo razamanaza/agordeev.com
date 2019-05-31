@@ -171,8 +171,9 @@ var startServer = function (done) {
 	// Initialize BrowserSync
 	browserSync.init({
 		server: {
-			baseDir: paths.reload
-		}
+      baseDir: paths.reload
+    },
+    open: false
 	});
 
 	// Signal completion
