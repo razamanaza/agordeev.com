@@ -45,6 +45,7 @@ var del = require('del');
 var flatmap = require('gulp-flatmap');
 var lazypipe = require('lazypipe');
 var rename = require('gulp-rename');
+var notify = require("gulp-notify");
 
 // Styles
 var sass = require('gulp-sass');
@@ -90,7 +91,7 @@ var buildStyles = function (done) {
 		.pipe(sass({
 			outputStyle: 'expanded',
 			sourceComments: true
-		}))
+		}).on("error", notify.onError()))
 		.pipe(prefix({
 			browsers: ['last 2 version', '> 0.25%'],
 			cascade: true,
@@ -171,8 +172,9 @@ var startServer = function (done) {
 	// Initialize BrowserSync
 	browserSync.init({
 		server: {
-			baseDir: paths.reload
-		}
+      baseDir: paths.reload
+    },
+    open: false
 	});
 
 	// Signal completion
