@@ -2,3 +2,23 @@
  * @section Base Styles
  */
 
+$main-font: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$header-font: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$body-bg-color: #15181e;
+$bg-color: #22262e;
+$main-color: #ffffff;
+
+body {
+  font-family: $main-font;
+  background-color: $body-bg-color;
+  color: $main-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+}
