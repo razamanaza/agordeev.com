@@ -3,10 +3,17 @@
  */
 
 $main-font: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$header-font: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$secondary-font: 'Oswald', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $body-bg-color: #15181e;
 $bg-color: #22262e;
 $main-color: #ffffff;
+$mainnav-size: 45px;
+$mainnav-icon-size: 25px;
+$profile-color: #d63d3f;
+$resume-color: #37bc9b;
+$portfolio-color: #f6bb42;
+$contact-color: #4a89dc;
+
 
 body {
   font-family: $main-font;
@@ -20,5 +27,41 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $header-font;
+  font-family: $secondary-font;
+  text-align: center;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+a {
+  color: $main-color;
+}
+
+section {
+  background-color: $bg-color;
+}
+
+.section-header {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  margin-left: -2rem;
+  padding: 20px 40px;
+  border-style: solid;
+  border-width: 2px 0 2px 2px;
+  border-color: $profile-color;
+  &::after {
+    content: '';
+    position: absolute;
+    right: -31px;
+    top: 11px;
+    display: inline-block;
+    height: 63px;
+    width: 63px;
+    border: 2px solid $profile-color;
+    border-width: 2px 0 0 2px;
+    transform: rotate(135deg);
+  }
 }

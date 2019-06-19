@@ -113,7 +113,12 @@ var optimizeImages = function (done) {
 
 	return src(paths.images.input)
 		.pipe(imagemin([
-      imagemin.jpegtran({progressive: true})
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo({
+        plugins: [{
+            removeViewBox: false
+        }]
+      })
     ]))
 		.pipe(dest(paths.images.output));
 
