@@ -3,3 +3,16 @@
     max-width: 100%;
   }
 }
+
+@media screen and (min-width: 1300px) {
+  .main-nav-items {
+    position: fixed;
+    flex-direction: column;
+    left: 130px;
+    top: 10%;
+  }
+  .online-links {
+    margin-top: 20px;
+    text-align: right;
+  }
+}
