@@ -1,0 +1,71 @@
+
+
+.main-nav-items {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  z-index: 100;
+  top: 10px;
+  left: 50%;
+  margin-left: -calc($mainnav-size * 5 / 2);
+  box-shadow: 2px 2px 3px $bg-color;
+  &:last-child {
+    border: none;
+  }
+}
+
+.main-nav-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  a {
+    font-size: 0;
+    line-height: $mainnav-size;
+    display: inline-block;
+    width: $mainnav-size;
+    height: $mainnav-size;
+    background-color: $main-color;
+    border-right: 2px solid #ddd;
+    position: relative;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: $mainnav-icon-size;
+      height: $mainnav-icon-size;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.nav-top {
+  a {
+    background-color: $bg-color;
+    border: none;
+    &::before {
+      background-image: url('../img/menu.svg');
+    }
+  }
+}
+
+.nav-profile a::before {
+  background-image: url('../img/profile.svg');
+  filter: invert(32%) sepia(85%) saturate(1466%) hue-rotate(332deg) brightness(86%) contrast(93%);
+}
+
+.nav-resume a::before {
+  background-image: url('../img/resume.svg');
+  filter: invert(87%) sepia(16%) saturate(6461%) hue-rotate(104deg) brightness(92%) contrast(57%);
+}
+
+.nav-portfolio a::before {
+  background-image: url('../img/portfolio.svg');
+  filter: invert(88%) sepia(16%) saturate(3006%) hue-rotate(327deg) brightness(105%) contrast(93%);
+}
+
+.nav-contact a::before {
+  background-image: url('../img/contact.svg');
+  filter: invert(75%) sepia(62%) saturate(6650%) hue-rotate(195deg) brightness(94%) contrast(82%);
+}

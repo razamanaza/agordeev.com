@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu&display=swap');
 @import 'vendors/milligram/_Color';
 @import 'vendors/milligram/_Base';
 @import 'vendors/milligram/_Button.sass';
@@ -10,3 +11,7 @@
 @import 'vendors/milligram/_Typography';
 @import 'vendors/milligram/_Utility';
 @import 'components/base';
+@import 'components/mainnav';
+@import 'components/online-links';
+@import 'components/profile';
+@import 'components/media'; //Must be the last in the row

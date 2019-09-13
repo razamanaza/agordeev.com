@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Aleksandr Gordeev. The web-developer's personal site</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,40 +12,44 @@
   <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
   <link rel="stylesheet" href="css/main.min.css">
 
-  <meta name="theme-color" content="#fafafa">
+  <meta name="theme-color" content="#22262e">
 </head>
 
-<body>
+<body id="top">
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
   <nav class="main-nav">
-    <ul>
-      <li><a href="#">About me</a></li>
-      <li><a href="#">Resume</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
+    <ul class="main-nav-items">
+      <li class="nav-top main-nav-item"><a href="#top">To top</a></li>
+      <li class="nav-profile main-nav-item"><a href="#profile">Profile</a></li>
+      <li class="nav-resume main-nav-item"><a href="#resume">Resume</a></li>
+      <li class="nav-portfolio main-nav-item"><a href="#portfolio">Portfolio</a></li>
+      <li class="nav-contact main-nav-item"><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <div class="online-links">
-    <a class="github" href="#"></a>
-    <a class="codewars" href="#"></a>
-    <a class="linkedin" href="#"></a>
+  <div class="online-links container">
+    <a class="github" href="https://github.com/razamanaza"><img src="img/github.svg" alt="My github profile"></a>
+    <a class="codewars" href="https://www.codewars.com/users/razamanaza"><img src="img/codewars.png" alt="My codewars profile"></a>
+    <a class="linkedin" href="https://www.linkedin.com/in/razamanaza"><img src="img/linkedin.svg" alt="My linkedin profile"></a>
   </div>
 
-  <section class="about container">
+  <section id="profile" class="profile container section-figure">
     <h2 class="section-header">Profile</h2>
     <div class="row">
-      <div class="column column-40">
+      <div class="profile-photo column column-33">
         <h1>Aleksandr Gordeev</h1>
         <p>web-developer</p>
-        <image src="img/profile-photo.jpeg" alt="My photo"></image>
+        <img src="img/profile-photo.jpeg" alt="My photo">
       </div>
       <div class="column">
         <h3>About me</h3>
-        <p>Highly dependable IT specialist with a broad skill set and more than 10-years relevant experience. Self-driven and motivated with an aspiration to achieve employer's goals with a maximum price-quality ratio.
+        <p>Highly dependable IT specialist with a broad skill set and more than 10-years relevant experience. Self-driven and motivated with an aspiration to achieve my employer's goals with a maximum price-quality ratio.
+        </p>
+        <p>
+          Can explain things without using technical slang. Being a head of IT department, was able to create a highly efficient and at the same time friendly and supportive IT team.
         </p>
       </div>
     </div>
@@ -53,106 +57,292 @@
     <ul class="services row">
       <li class="service website-creation column">
         <h4>Website creation</h4>
-        <p>Can creat website useful for your business on the turnkey basis.
+        <p>Can create a useful website helping you in reaching your business goals.
         </p>
       </li>
       <li class="service seo column">
         <h4>SEO optimisation</h4>
-        <p>Can make your site visible and searchable in the Internet.
+        <p>Can make your site visible and recognizable on the Internet.
         </p>
       </li>
       <li class="service problem-solving column">
         <h4>Problem solving</h4>
-        <p>Can solve your problems with existing site.
+        <p>Can solve problems with your existing site or hosting provider.
         </p>
       </li>
     </ul>
   </section>
 
-  <section class="resume container">
+  <section id="resume" class="resume container section-figure">
     <h2 class="section-header">Resume</h2>
-    <p class="resume-vcard">Download vCard</p>
+    <a class="resume-vcard" href="agordeev.vcf">Download vCard</a>
     <div class="row">
-      <ul class="employments column">
-        <li class="employment">
-          <div class="employment-title">
-            <p>Various companies</p>
-            <p class="employment-dates">2010 - 2019</p>
-          </div>
-          <p class="employment-position">Web-developer freelancer</p>
-          <p>Websites creation, solving problems with hosting, protection from spambots and so on. Some examples in Portfolio section below</p>
-        </li>
-        <li class="employment">
-          <div class="employment-title">
-            <p>Detlandia, supermarkets chain</p>
-            <p class="employment-dates">2008 - 2019</p>
-          </div>
-          <p class="employment-position">Programmer, Head of IT department</p>
-          <p>Developed and maintained corporate and intranet website and integration with Google cloud solutions. Developed and maintained distributed IT infrastructure with lots of services.</p>
-        </li>
-        <li class="employment">
-          <div class="employment-title">
-            <p>Vostokshingorg, retail chain</p>
-            <p class="employment-dates">2006 - 2008</p>
-          </div>
-          <p class="employment-position">System administrator</p>
-          <p>Maintained distributed IT infrastructure.</p>
-        </li>
+      <div class="column">
+        <h3>Employment</h3>
+        <ul class="employments">
+          <li class="employment">
+            <div class="employment-title">
+              <p>Various companies</p>
+              <p class="employment-dates">2010 - 2019</p>
+            </div>
+            <p class="employment-position">Freelancer</p>
+            <p>Created websites for my clients on the turnkey basis. Solved different problems with existing sites. Some examples can be found in the <a href="#portfolio">Portfolio</a> section</p>
+          </li>
+          <li class="employment">
+            <div class="employment-title">
+              <p>Detlandia, supermarkets chain</p>
+              <p class="employment-dates">2008 - 2019</p>
+            </div>
+            <p class="employment-position">Programming specialist - Head of IT department</p>
+            <ul>
+              <li>Designed, implemented and developed a distributed corporate network of 8 branches in different cities</li>
+              <li>Developed and maintained corporate website and intranet site based on Google cloud services</li>
+              <li>Maintained local ERP and database systems</li>
+              <li>Implemented and maintained corporate monitoring service</li>
+              <li>Implemented a comprehensive backup system</li>
+              <li>There were lots of other interesting projects...</li>
+            </ul>
+          </li>
+          <li class="employment">
+            <div class="employment-title">
+              <p>Shitop LLC</p>
+              <p class="employment-dates">2006 - 2008</p>
+            </div>
+            <p class="employment-position">System administrator</p>
+            <p>Administered and maintained a mixed OS environment (Microsoft Windows and Linux workstations and servers) as well as network devices across 10 branches locally and remotely.</p>
+          </li>
+          <li class="employment">
+            <div class="employment-title">
+              <p>Artem newspaper LLC</p>
+              <p class="employment-dates">2003 - 2006</p>
+            </div>
+            <p class="employment-position">Graphic designer and prepress operator</p>
+            <ul>
+              <li>Made prepress layouts for newspaper</li>
+              <li>Maintained office equipment</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h3>Education</h3>
+        <ul class="education">
+          <li class="education-item">
+            <div class="education-provider">
+              <p>The Hong Kong University of Science and Technology</p>
+              <p class="education-dates">2017</p>
+            </div>
+            <p class="education-type">Massive open online course at Coursera</p>
+            <p class="education-name">Full Stack Web Development</p>
+          </li>
+          <li class="education-item">
+            <div class="education-provider">
+              <p>Massachusetts Institute of Technology</p>
+              <p class="education-dates">2016</p>
+            </div>
+            <p class="education-type">Massive open online course at Edex</p>
+            <p class="education-name">6.00.1x: Introduction to Computer Science and Programming Using Python</p>
+          </li>
+          <li class="education-item">
+            <div class="education-provider">
+              <p>HTML Academy</p>
+              <p class="education-dates">2015</p>
+            </div>
+            <p class="education-type">Bootcamp</p>
+            <p class="education-name">Base HTML and CSS</p>
+          </li>
+          <li class="education-item">
+            <div class="education-provider">
+              <p>Rice University</p>
+              <p class="education-dates">2014</p>
+            </div>
+            <p class="education-type">Massive open online course at Coursera</p>
+            <p class="education-name">An Introduction to Interactive Programming in Python</p>
+          </li>
+          <li class="education-item">
+            <div class="education-provider">
+              <p>RedHat</p>
+              <p class="education-dates">2014</p>
+            </div>
+            <p class="education-type">Certification</p>
+            <p class="education-name">Red Hat Certified Engineer</p>
+          </li>
+          <li class="education-item">
+            <div class="education-provider">
+              <p>RedHat</p>
+              <p class="education-dates">2011</p>
+            </div>
+            <p class="education-type">Training</p>
+            <p class="education-name">RH-134. RedHat System Administration II</p>
+          </li>
+          <li class="education-item">
+            <div class="education-provider">
+              <p>Vladivostok State University of Economics and Service</p>
+              <p class="education-dates">2007</p>
+            </div>
+            <p class="education-type">Degree</p>
+            <p class="education-name">Computer Systems Engineer Diploma with distinct</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h3>Technologies used</h3>
+      <h4>Web technologies</h4>
+      <ul class="web-tech">
+        <li class="web-tech-item g-suite">Google G Suite</li>
+        <li class="web-tech-item g-sctipt">Google Apps Script</li>
+        <li class="web-tech-item html5">HTML5</li>
+        <li class="web-tech-item css3">CSS3</li>
+        <li class="web-tech-item php">PHP</li>
+        <li class="web-tech-item javascript">Javascript</li>
+        <li class="web-tech-item jquery">JQuery</li>
+        <li class="web-tech-item git">Git</li>
+        <li class="web-tech-item github-pages">GitHub pages</li>
+        <li class="web-tech-item gulp">Gulp</li>
+        <li class="web-tech-item bootstrap">Bootstrap framework</li>
+        <li class="web-tech-item wordpress">Wordpress CMS</li>
+        <li class="web-tech-item joomla">Joomla CMS</li>
+        <li class="web-tech-item seo">SEO Basics</li>
       </ul>
-      <ul class="education column">
-        <li class="education-item">
-          <p class="ducation-title">
-            Graduate Diploma in IT
-          </p>
-          <p>Diploma. Otago Polytechnic
-          </p>
-        </li>
-        <li class="education-item">
-          <p class="ducation-title">
-            Full Stack Web Development
-          </p>
-          <p>MOOC at Coursera. The Hong Kong University of Science and Technology
-          </p>
-        </li>
-        <li class="education-item">
-          <p class="ducation-title">
-            Base HTML and CSS.
-          </p>
-          <p>Bootcamp. HTML Academy
-          </p>
-        </li>
-        <li class="education-item">
-          <p class="education-title">
-            6.00.1x: Introduction to Computer Science and Programming Using Python
-          </p>
-          <p>MITx. MOOC on Edex
-          </p>
-        </li>
-        <li class="education-item">
-          <p class="education-title">
-          An Introduction to Interactive Programming in Python
-          </p>
-          <p>Rice University. MOOC on Coursera
-          </p>
-        </li>
-        <li class="education-item">
-          <p class="education-title">
-          Red Hat Certified Engineer (Cert ID:  111-186-581)
-          </p>
-          <p>Certification. Softline
-          </p>
-        </li>
-        <li class="education-item">
-          <p class="education-title">
-          Computer Systems Engineer Diploma with distinct
-          </p>
-          <p>Degree
-            Vladivostok State University of Economics and Service
-          </p>
-        </li>
+      <h4>OS</h4>
+      <ul class="os">
+        <li class="os-item ubuntu">Ubuntu</li>
+        <li class="os-item debian">Debian</li>
+        <li class="os-item centos">CentOS</li>
+        <li class="os-item proxmox">Proxmox</li>
+        <li class="os-item windows-desktop">Microsoft Windows Desktop OS (Windows XP – 10)</li>
+        <li class="os-item windows-server">Microsoft Windows Server OS (2003 – 2008)</li>
+      </ul>
+      <h4>Other technologies</h4>
+      <ul class="other-tech">
+        <li class="other-tech-item openvpn">OpenVPN</li>
+        <li class="other-tech-item bash">Bash</li>
+        <li class="other-tech-item backuppc">BackupPC</li>
+        <li class="other-tech-item iptables">Iptables</li>
+        <li class="other-tech-item kvm">KVM virtualization</li>
+        <li class="other-tech-item thinstation">Thinstation</li>
+        <li class="other-tech-item dhcp">DHCP</li>
+        <li class="other-tech-item dns">DNS</li>
+        <li class="other-tech-item squid">Squid</li>
+        <li class="other-tech-item postfix">Postfix</li>
+        <li class="other-tech-item postgresql">PostgreSQL</li>
+        <li class="other-tech-item mysql">MySQL</li>
+        <li class="other-tech-item zabbix">Zabbix</li>
+        <li class="other-tech-item apache">Apache</li>
+        <li class="other-tech-item mdadm">mdadm RAID</li>
+        <li class="other-tech-item vagrant">Vagrant</li>
+        <li class="other-tech-item ansible">Ansible</li>
+        <li class="other-tech-item rds">Remote Desktop Services</li>
       </ul>
     </div>
   </section>
+
+  <section class="portfolio container section-figure" id="portfolio">
+    <h2 class="section-header">Portfolio</h2>
+    <section class="portfolio-shape soofi">
+      <a class="overlay" href="img/soofi.png">Salman Soofi's personal website</a>
+      <div class="details">
+        <header>Salman Soofi's personal website</header>
+        <p>Personal site of an abstract painter</p>
+        <a class="button" href="http://salmansoofi-art.com/">Visit site</a>
+      </div>
+    </section>
+    <section class="portfolio-shape sud-snab">
+      <a class="overlay" href="img/sud-snab.png">Supply for marine vessels</a>
+      <div class="details">
+        <header>Supply for marine vessels</header>
+        <p>Site of the company engaged in the equipment for shipbuilding and ship repair.</p>
+        <a class="button" href="http://sud-snab.ru/">Visit site</a>
+      </div>
+    </section>
+    <section class="portfolio-shape ecoproject">
+      <a class="overlay" href="img/ecoproject.png">Ecoproject</a>
+      <div class="details">
+        <header>Ecoproject LLC</header>
+        <p>LLC "Center of Audit and Consulting "ECOPROJECT" is a specialized organization engaged in environmental design in the Far East.</p>
+        <a class="button" href="https://ecoproject-vl.ru/">Visit site</a>
+      </div>
+    </section>
+    <section class="portfolio-shape mirfanery">
+      <a class="overlay" href="img/mirfanery.png">Mir fanery</a>
+      <div class="details">
+        <header>Mir fanery</header>
+        <p>Regional trade company specialized in  plywood sellings.</p>
+        <a class="button" href="https://mirfanery.ru/">Visit site</a>
+      </div>
+    </section>
+    <section class="portfolio-shape rezinotechnika">
+      <a class="overlay" href="img/rezinotechnika.png">Rezinotechnika LLC</a>
+      <div class="details">
+        <header>Rezinotechnika LLC</header>
+        <p>Site of the company engaged in manufacture and delivery of rubber and asbestos technical products for the enterprises of a various orientation</p>
+        <a class="button" href="http://http://rt25.ru/">Visit site</a>
+      </div>
+    </section>
+    <section class="portfolio-shape srub-dv">
+      <a class="overlay" href="img/srub-dv.png">Srub-DV</a>
+      <div class="details">
+        <header>Srub-DV</header>
+        <p>Site of the company engaged in manufacture and delivery of wooden houses and baths.</p>
+        <a class="button" href="http://srub-dv.ru/">Visit site</a>
+      </div>
+    </section>
+    <section class="portfolio-shape tfgi">
+      <a class="overlay" href="img/tfgi.png">TFGI</a>
+      <div class="details">
+        <header>The official site of the Far Eastern branch of the Federal Budget Istitution Geologicall Information Territorial Fund </header>
+        <p>Simple site for a local branch of the government geological institution</p>
+        <a class="button" href="http://tfgipk.ru/">Visit site</a>
+      </div>
+    </section>
+    <section class="portfolio-shape safeindustry">
+      <a class="overlay" href="img/safeindustry.png">Safeindustry</a>
+      <div class="details">
+        <header>Group of companies Safeindustry</header>
+        <p>Functionally very rich site devoted to the issues of industrial safety. The site has a full-featured online store modified to the specifics of the customer. There is also a forum. In fact, the site is a corporate Internet portal.</p>
+        <a class="button" href="http://www.safeindustry.ru/">Visit site</a>
+      </div>
+    </section>
+    <section class="portfolio-shape asept">
+      <a class="overlay" href="img/asept.png">Asept Tradehouse</a>
+      <div class="details">
+        <header>Asept Tradehouse</header>
+        <p>Site-catalogue on a turnkey basis. Modified template is used for the design. The catalogue is implemented using the VirtueMart online store component. Thus, in the future it is possible to extend the functionality. The mailing module has also been improved.</p>
+        <a class="button" href="http://aseptvl.ru/">Visit site</a>
+      </div>
+    </section>
+  </section>
+
+  <footer class="contact container" id="contact">
+    <h2 class="section-header">Contact</h2>
+    <div class="row">
+      <div class="column">
+        <form id="footer-contact-form" class="footer-contact-form" action="">
+          <label for="footer-contact-name">Name</label>
+          <input type="text" id="footer-contact-name" name="Name" placeholder="name" required>
+          <label for="footer-contact-subject">Subject</label>
+          <input type="text" id="footer-contact-subject" name="Subject" placeholder="subject" required>
+          <label for="footer-contact-message">Message</label>
+          <textarea id="footer-contact-message" placeholder="message"></textarea>
+          <button type="submit" class="button">Send</button>
+        </form>
+      </div>
+      <div class="column">
+        <div class="footer-contacts">
+          <a class="phone" href="tel:+79147924726">7-914-792-47-26</a>
+          <a class="email" href="mailto:razamanaza@yandex.ru">razamanaza@yandex.ru</a>
+          <a class="skype" href="skype:razamanaza">razamanaza</a>
+        </div>
+        <div class="online-links">
+            <a class="github" href="https://github.com/razamanaza"><img src="img/github.svg" alt="My github profile"></a>
+            <a class="codewars" href="https://www.codewars.com/users/razamanaza"><img src="img/codewars.png" alt="My codewars profile"></a>
+            <a class="linkedin" href="https://www.linkedin.com/in/razamanaza"><img src="img/linkedin.svg" alt="My linkedin profile"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="js/main.js"></script>
 
 </body>

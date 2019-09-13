@@ -2,3 +2,90 @@
  * @section Base Styles
  */
 
+$main-font: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$secondary-font: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$body-bg-color: #15181e;
+$bg-color: #242831;
+$main-color: #ffffff;
+$mainnav-size: 45px;
+$mainnav-icon-size: 25px;
+$profile-color: #d63d3f;
+$resume-color: #37bc9b;
+$portfolio-color: #f6bb42;
+$contact-color: #4a89dc;
+
+
+body {
+  font-family: $main-font;
+  background-color: $body-bg-color;
+  color: $main-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $secondary-font;
+  text-align: center;
+  letter-spacing: inherit;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+a {
+  color: $main-color;
+}
+
+.section-figure {
+  background-color: $bg-color;
+  position: relative;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+  &::after {
+    content: url(../img/section-bottom.svg);
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    left: 0;
+    height: 50px;
+  }
+}
+
+.section-header {
+  display: inline-block;
+  font-size: 3rem;
+  line-height: 37px;
+  position: relative;
+  text-align: left;
+  margin-left: -2rem;
+  padding: 20px 20px 20px 107px;
+  border-style: solid;
+  border-width: 2px 0 2px 2px;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 77px;
+    height: 77px;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    right: -29px;
+    top: 10px;
+    display: inline-block;
+    height: 58px;
+    width: 58px;
+    border-style: solid;
+    border-width: 2px 0 0 2px;
+    transform: rotate(135deg);
+  }
+}

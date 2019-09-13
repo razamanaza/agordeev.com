@@ -1,0 +1,31 @@
+.profile {
+  .section-header {
+    border-color: $profile-color;
+    &::before {
+      background-color: $profile-color;
+      background-image: url('../img/profile.svg');
+    }
+    &::after {
+      border-color: $profile-color;
+    }
+  }
+}
+
+.profile-photo {
+  text-align: center;
+  img {
+    display: inline-block;
+    border-radius: 50%;
+    max-width: 220px;
+    margin-bottom: 3rem;
+  }
+  p {
+    font-size: 2.5rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+}
+
