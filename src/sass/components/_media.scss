@@ -2,6 +2,12 @@
   .row .column.column-33 {
     max-width: 100%;
   }
+  .resume-vcard {
+    text-align: center;
+    a {
+      margin-right: 0;
+    }
+  }
 }
 
 @media screen and (min-width: 1300px) {

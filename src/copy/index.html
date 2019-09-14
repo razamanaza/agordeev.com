@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -31,9 +31,9 @@
   </nav>
 
   <div class="online-links container">
-    <a class="github" href="https://github.com/razamanaza"><img src="img/github.svg" alt="My github profile"></a>
-    <a class="codewars" href="https://www.codewars.com/users/razamanaza"><img src="img/codewars.png" alt="My codewars profile"></a>
-    <a class="linkedin" href="https://www.linkedin.com/in/razamanaza"><img src="img/linkedin.svg" alt="My linkedin profile"></a>
+    <a class="github" href="https://github.com/razamanaza" target="_blank"><img src="img/github.svg" alt="My github profile"></a>
+    <a class="codewars" href="https://www.codewars.com/users/razamanaza" target="_blank"><img src="img/codewars.png" alt="My codewars profile"></a>
+    <a class="linkedin" href="https://www.linkedin.com/in/razamanaza" target="_blank"><img src="img/linkedin.svg" alt="My linkedin profile"></a>
   </div>
 
   <section id="profile" class="profile container section-figure">
@@ -41,7 +41,7 @@
     <div class="row">
       <div class="profile-photo column column-33">
         <h1>Aleksandr Gordeev</h1>
-        <p>web-developer</p>
+        <p>web-developer<br>systems engineer</p>
         <img src="img/profile-photo.jpeg" alt="My photo">
       </div>
       <div class="column">
@@ -55,18 +55,18 @@
     </div>
     <h3>Services</h3>
     <ul class="services row">
-      <li class="service website-creation column">
-        <h4>Website creation</h4>
+      <li class="service column">
+        <h4 class="website-creation">Website creation</h4>
         <p>Can create a useful website helping you in reaching your business goals.
         </p>
       </li>
-      <li class="service seo column">
-        <h4>SEO optimisation</h4>
+      <li class="service column">
+        <h4 class="seo">SEO optimisation</h4>
         <p>Can make your site visible and recognizable on the Internet.
         </p>
       </li>
-      <li class="service problem-solving column">
-        <h4>Problem solving</h4>
+      <li class="service column">
+        <h4 class="problem-solving">Problem solving</h4>
         <p>Can solve problems with your existing site or hosting provider.
         </p>
       </li>
@@ -74,26 +74,26 @@
   </section>
 
   <section id="resume" class="resume container section-figure">
-    <h2 class="section-header">Resume</h2>
-    <a class="resume-vcard" href="agordeev.vcf">Download vCard</a>
+    <div class="row">
+      <div class="column">
+        <h2 class="section-header">Resume</h2>
+      </div>
+      <div class="column resume-vcard">
+        <a href="agordeev.vcf">Download vCard</a>
+      </div>
+    </div>
     <div class="row">
       <div class="column">
         <h3>Employment</h3>
         <ul class="employments">
           <li class="employment">
-            <div class="employment-title">
-              <p>Various companies</p>
-              <p class="employment-dates">2010 - 2019</p>
-            </div>
+            <p class="employment-title">Various companies <span class="employment-dates">2010 - 2019</span></p>
             <p class="employment-position">Freelancer</p>
             <p>Created websites for my clients on the turnkey basis. Solved different problems with existing sites. Some examples can be found in the <a href="#portfolio">Portfolio</a> section</p>
           </li>
           <li class="employment">
-            <div class="employment-title">
-              <p>Detlandia, supermarkets chain</p>
-              <p class="employment-dates">2008 - 2019</p>
-            </div>
-            <p class="employment-position">Programming specialist - Head of IT department</p>
+            <p class="employment-title">Detlandia, supermarkets chain <span class="employment-dates">2008 - 2019</span></p>
+            <p class="employment-position">Systems Engineer - Head of IT department</p>
             <ul>
               <li>Designed, implemented and developed a distributed corporate network of 8 branches in different cities</li>
               <li>Developed and maintained corporate website and intranet site based on Google cloud services</li>
@@ -108,7 +108,7 @@
               <p>Shitop LLC</p>
               <p class="employment-dates">2006 - 2008</p>
             </div>
-            <p class="employment-position">System administrator</p>
+            <p class="employment-position">Systems administrator</p>
             <p>Administered and maintained a mixed OS environment (Microsoft Windows and Linux workstations and servers) as well as network devices across 10 branches locally and remotely.</p>
           </li>
           <li class="employment">
@@ -128,6 +128,14 @@
       <div class="column">
         <h3>Education</h3>
         <ul class="education">
+          <li class="education-item">
+            <div class="education-provider">
+              <p>Otago Polytechnic</p>
+              <p class="education-dates">2019 - 2020</p>
+            </div>
+            <p class="education-type">Diploma</p>
+            <p class="education-name">Graduate Diploma in IT</p>
+          </li>
           <li class="education-item">
             <div class="education-provider">
               <p>The Hong Kong University of Science and Technology</p>
@@ -170,16 +178,8 @@
           </li>
           <li class="education-item">
             <div class="education-provider">
-              <p>RedHat</p>
-              <p class="education-dates">2011</p>
-            </div>
-            <p class="education-type">Training</p>
-            <p class="education-name">RH-134. RedHat System Administration II</p>
-          </li>
-          <li class="education-item">
-            <div class="education-provider">
               <p>Vladivostok State University of Economics and Service</p>
-              <p class="education-dates">2007</p>
+              <p class="education-dates">2001 - 2007</p>
             </div>
             <p class="education-type">Degree</p>
             <p class="education-name">Computer Systems Engineer Diploma with distinct</p>
@@ -196,6 +196,7 @@
         <li class="web-tech-item html5">HTML5</li>
         <li class="web-tech-item css3">CSS3</li>
         <li class="web-tech-item php">PHP</li>
+        <li class="web-tech-item laravel">Laravel</li>
         <li class="web-tech-item javascript">Javascript</li>
         <li class="web-tech-item jquery">JQuery</li>
         <li class="web-tech-item git">Git</li>
@@ -221,7 +222,8 @@
         <li class="other-tech-item bash">Bash</li>
         <li class="other-tech-item backuppc">BackupPC</li>
         <li class="other-tech-item iptables">Iptables</li>
-        <li class="other-tech-item kvm">KVM virtualization</li>
+        <li class="other-tech-item kvm">KVM</li>
+        <li class="other-tech-item xen">Xen</li>
         <li class="other-tech-item thinstation">Thinstation</li>
         <li class="other-tech-item dhcp">DHCP</li>
         <li class="other-tech-item dns">DNS</li>
@@ -234,6 +236,8 @@
         <li class="other-tech-item mdadm">mdadm RAID</li>
         <li class="other-tech-item vagrant">Vagrant</li>
         <li class="other-tech-item ansible">Ansible</li>
+        <li class="other-tech-item docker">Docker</li>
+        <li class="other-tech-item openstack">Openstack</li>
         <li class="other-tech-item rds">Remote Desktop Services</li>
       </ul>
     </div>
@@ -319,7 +323,7 @@
     <h2 class="section-header">Contact</h2>
     <div class="row">
       <div class="column">
-        <form id="footer-contact-form" class="footer-contact-form" action="">
+        <form id="footer-contact-form" class="footer-contact-form" action="/" method="POST">
           <label for="footer-contact-name">Name</label>
           <input type="text" id="footer-contact-name" name="Name" placeholder="name" required>
           <label for="footer-contact-subject">Subject</label>
@@ -331,8 +335,8 @@
       </div>
       <div class="column">
         <div class="footer-contacts">
-          <a class="phone" href="tel:+79147924726">7-914-792-47-26</a>
-          <a class="email" href="mailto:razamanaza@yandex.ru">razamanaza@yandex.ru</a>
+          <a class="phone" href="tel:0226571736">022-657-17-36</a>
+          <a class="email" href="mailto:razamanaza@yandex.ru">razamanaza@gmail.com</a>
           <a class="skype" href="skype:razamanaza">razamanaza</a>
         </div>
         <div class="online-links">

@@ -1,0 +1,77 @@
+.resume {
+  .section-header {
+    border-color: $resume-color;
+    &::before {
+      background-color: $resume-color;
+      background-image: url('../img/resume.svg');
+    }
+    &::after {
+      border-color: $resume-color;
+    }
+  }
+  h3 {
+    text-align: left;
+  }
+}
+
+.resume-vcard {
+  text-align: right;
+
+  a {
+    display: inline-block;
+    padding: 0 40px;
+    height: 80px;
+    background-color: $main-color;
+    color: $body-bg-color;
+    margin-right: -2rem;
+    margin-bottom: 2rem;
+    &::after {
+      @include center-icon(30px, 30px);
+      background-image: url('../img/arrow.svg');
+      margin-top: 9px;
+      filter: brightness()
+    }
+  }
+}
+
+.employments, .education {
+  padding-left: 30px;
+  margin-left: 12px;
+  border-left: 5px solid #fff;
+  p {
+    margin-bottom: 7px;
+  }
+  .employment, .education-item {
+    list-style: none;
+    position: relative;
+    margin-bottom: 50px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background-color: $resume-color;
+      border-radius: 50%;
+      left: -45px;
+    }
+    li {
+      font-size: 1.6rem;
+      list-style: disc;
+    }
+    .employment-title, .education-provider {
+      font-size: 2.3rem;
+      display: inline-block;
+      max-width: 70%;
+      margin-top: -5px;
+    }
+    .employment-dates, .education-dates {
+      position: absolute;
+      right: 0;
+      top: 2px;
+      font-size: 1.6rem;
+    }
+    .employment-position, .education-type {
+      font-size: 1.9rem;
+    }
+  }
+}

@@ -10,8 +10,10 @@
 @import 'vendors/milligram/_Spacing';
 @import 'vendors/milligram/_Typography';
 @import 'vendors/milligram/_Utility';
+@import 'components/mixins';
 @import 'components/base';
 @import 'components/mainnav';
 @import 'components/online-links';
+@import 'components/resume';
 @import 'components/profile';
 @import 'components/media'; //Must be the last in the row

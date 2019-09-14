@@ -1,0 +1,15 @@
+@function icon-padding($height){
+  @return $height / 2
+}
+
+@mixin center-icon($width, $height) {
+  content: '';
+  display: block;
+  margin: 0 auto icon-padding($height) auto;
+  width: $width;
+  height: $height;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

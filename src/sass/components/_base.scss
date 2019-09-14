@@ -58,9 +58,9 @@ a {
 .section-header {
   display: inline-block;
   font-size: 3rem;
-  line-height: 37px;
   position: relative;
   text-align: left;
+  height: 80px;
   margin-left: -2rem;
   padding: 20px 20px 20px 107px;
   border-style: solid;
@@ -82,8 +82,8 @@ a {
     right: -29px;
     top: 10px;
     display: inline-block;
-    height: 58px;
-    width: 58px;
+    height: 56.55px;
+    width: 56.55px;
     border-style: solid;
     border-width: 2px 0 0 2px;
     transform: rotate(135deg);
