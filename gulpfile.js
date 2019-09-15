@@ -204,7 +204,7 @@ var deploy = function (done) {
   return src(paths.deploy.src)
   .pipe(ghPages({
     remoteUrl: settings.ghPagesUrl,
-    branch: 'master'
+    branch: 'gh-pages'
   }));
 };
 
