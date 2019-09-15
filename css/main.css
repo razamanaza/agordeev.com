@@ -694,7 +694,7 @@ a {
 
 /* line 44, src/sass/components/_base.scss */
 .section-figure {
-  background-color: #242831;
+  background-color: #333946;
   position: relative;
   margin-bottom: 100px;
   padding-bottom: 50px;
@@ -702,12 +702,12 @@ a {
 
 /* line 49, src/sass/components/_base.scss */
 .section-figure::after {
-  content: url(../img/section-bottom.svg);
+  content: url(../img/bottom.svg);
   position: absolute;
-  bottom: -50px;
+  bottom: -39px;
   width: 100%;
   left: 0;
-  height: 50px;
+  height: 40px;
 }
 
 /* line 59, src/sass/components/_base.scss */
@@ -766,8 +766,8 @@ a {
   top: 0;
   left: 50%;
   margin-left: -calc(150px);
-  -webkit-box-shadow: 2px 2px 3px #242831;
-          box-shadow: 2px 2px 3px #242831;
+  -webkit-box-shadow: 2px 2px 3px #333946;
+          box-shadow: 2px 2px 3px #333946;
 }
 
 /* line 12, src/sass/components/_mainnav.scss */
@@ -790,11 +790,10 @@ a {
   width: 60px;
   height: 60px;
   background-color: #ffffff;
-  border-right: 2px solid #ddd;
   position: relative;
 }
 
-/* line 30, src/sass/components/_mainnav.scss */
+/* line 29, src/sass/components/_mainnav.scss */
 .main-nav-item a::before {
   content: "";
   display: inline-block;
@@ -806,35 +805,35 @@ a {
   margin-left: 13px;
 }
 
-/* line 44, src/sass/components/_mainnav.scss */
+/* line 43, src/sass/components/_mainnav.scss */
 .nav-top a {
-  background-color: #242831;
+  background-color: #333946;
   border: none;
 }
 
-/* line 47, src/sass/components/_mainnav.scss */
+/* line 46, src/sass/components/_mainnav.scss */
 .nav-top a::before {
   background-image: url("../img/menu.svg");
 }
 
-/* line 53, src/sass/components/_mainnav.scss */
+/* line 52, src/sass/components/_mainnav.scss */
 .nav-profile a::before {
-  background-image: url("../img/profile.svg");
+  background-image: url("../img/profile-color.svg");
 }
 
-/* line 57, src/sass/components/_mainnav.scss */
+/* line 56, src/sass/components/_mainnav.scss */
 .nav-resume a::before {
-  background-image: url("../img/resume.svg");
+  background-image: url("../img/resume-color.svg");
 }
 
-/* line 61, src/sass/components/_mainnav.scss */
+/* line 60, src/sass/components/_mainnav.scss */
 .nav-portfolio a::before {
-  background-image: url("../img/portfolio.svg");
+  background-image: url("../img/portfolio-color.svg");
 }
 
-/* line 65, src/sass/components/_mainnav.scss */
+/* line 64, src/sass/components/_mainnav.scss */
 .nav-contact a::before {
-  background-image: url("../img/contact.svg");
+  background-image: url("../img/contact-color.svg");
 }
 
 /* line 1, src/sass/components/_online-links.scss */
@@ -880,22 +879,27 @@ a {
 }
 
 /* line 16, src/sass/components/_contact.scss */
+.contact button:hover {
+  background-color: #333946;
+}
+
+/* line 19, src/sass/components/_contact.scss */
 .contact input:focus, .contact textarea:focus {
   border-color: #75a5e4;
 }
 
-/* line 19, src/sass/components/_contact.scss */
+/* line 22, src/sass/components/_contact.scss */
 .contact .online-links {
   text-align: center;
 }
 
-/* line 23, src/sass/components/_contact.scss */
+/* line 26, src/sass/components/_contact.scss */
 .contact .footer-contacts {
   max-width: 70%;
   margin: 0 auto 30px;
 }
 
-/* line 26, src/sass/components/_contact.scss */
+/* line 29, src/sass/components/_contact.scss */
 .contact .footer-contacts a {
   display: block;
   padding-left: 40px;
@@ -903,7 +907,7 @@ a {
   margin-bottom: 20px;
 }
 
-/* line 31, src/sass/components/_contact.scss */
+/* line 34, src/sass/components/_contact.scss */
 .contact .footer-contacts a::before {
   content: '';
   position: absolute;
@@ -914,24 +918,196 @@ a {
   background-position: center;
 }
 
-/* line 34, src/sass/components/_contact.scss */
+/* line 37, src/sass/components/_contact.scss */
 .contact .footer-contacts a:hover, .contact .footer-contacts a:active, .contact .footer-contacts a:focus {
   color: #ffffff;
 }
 
-/* line 38, src/sass/components/_contact.scss */
+/* line 41, src/sass/components/_contact.scss */
 .contact .footer-contacts .phone::before {
   background-image: url("../img/smartphone.svg");
 }
 
-/* line 41, src/sass/components/_contact.scss */
+/* line 44, src/sass/components/_contact.scss */
 .contact .footer-contacts .email::before {
   background-image: url("../img/email.svg");
 }
 
-/* line 44, src/sass/components/_contact.scss */
+/* line 47, src/sass/components/_contact.scss */
 .contact .footer-contacts .skype::before {
   background-image: url("../img/skype.svg");
+}
+
+/* line 2, src/sass/components/_portfolio.scss */
+.portfolio .section-header {
+  border-color: #f6bb42;
+}
+
+/* line 4, src/sass/components/_portfolio.scss */
+.portfolio .section-header::before {
+  background-color: #f6bb42;
+  background-image: url("../img/portfolio.svg");
+}
+
+/* line 8, src/sass/components/_portfolio.scss */
+.portfolio .section-header::after {
+  border-color: #f6bb42;
+}
+
+/* line 12, src/sass/components/_portfolio.scss */
+.portfolio .portfolio-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/* line 17, src/sass/components/_portfolio.scss */
+.portfolio .item {
+  position: relative;
+  background-color: #f6bb42;
+  width: 320px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+/* line 23, src/sass/components/_portfolio.scss */
+.portfolio .item:after {
+  content: '';
+  display: block;
+  background-color: inherit;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(2) translateX(-75%) translateY(-75%) translateZ(0) rotate(-28deg);
+          transform: scale(2) translateX(-75%) translateY(-75%) translateZ(0) rotate(-28deg);
+  -webkit-transition: -webkit-transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: -webkit-transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 3s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* line 37, src/sass/components/_portfolio.scss */
+.portfolio .item:hover:after {
+  -webkit-transform: scale(2) translateX(0%) translateY(0%) translateZ(0) rotate(-28deg);
+          transform: scale(2) translateX(0%) translateY(0%) translateZ(0) rotate(-28deg);
+}
+
+/* line 40, src/sass/components/_portfolio.scss */
+.portfolio .item:hover .item-image {
+  -webkit-transform: scale(1.2) translateZ(0);
+          transform: scale(1.2) translateZ(0);
+}
+
+/* line 43, src/sass/components/_portfolio.scss */
+.portfolio .item:hover .item-text {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+/* line 50, src/sass/components/_portfolio.scss */
+.portfolio .item-image {
+  height: auto;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition: -webkit-transform 750ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: -webkit-transform 750ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 750ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 750ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 750ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* line 56, src/sass/components/_portfolio.scss */
+.portfolio .item-image::before {
+  content: "";
+  display: block;
+  padding-top: 56%;
+  overflow: hidden;
+}
+
+/* line 62, src/sass/components/_portfolio.scss */
+.portfolio .item-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  line-height: 0;
+}
+
+/* line 72, src/sass/components/_portfolio.scss */
+.portfolio .item-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+  -webkit-transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1), transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1), transform 500ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+/* line 87, src/sass/components/_portfolio.scss */
+.portfolio .item-text-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* line 94, src/sass/components/_portfolio.scss */
+.portfolio .item-text-title {
+  font-weight: normal;
+  font-style: 16px;
+  font-size: 2rem;
+  padding: 0 15px;
+  margin: 5px 0 0 0;
+}
+
+/* line 100, src/sass/components/_portfolio.scss */
+.portfolio .item-text-title::after {
+  content: '';
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 20px;
+  height: 20px;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/link.svg");
+  margin-top: 10px;
+}
+
+/* line 107, src/sass/components/_portfolio.scss */
+.portfolio .item-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -9999px;
 }
 
 /* line 2, src/sass/components/_resume.scss */
