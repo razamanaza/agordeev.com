@@ -1,0 +1,1418 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu&display=swap");
+/* line 6, src/sass/vendors/milligram/_Base.sass */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* line 13, src/sass/vendors/milligram/_Base.sass */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/* line 18, src/sass/vendors/milligram/_Base.sass */
+body {
+  color: #22262e;
+  font-size: 1.6em;
+  font-weight: 300;
+  letter-spacing: .01em;
+  line-height: 1.6;
+}
+
+/* line 5, src/sass/vendors/milligram/_Button.sass */
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  background-color: #22262e;
+  border: 0.1rem solid #22262e;
+  border-radius: .4rem;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  height: 3.8rem;
+  letter-spacing: .1rem;
+  line-height: 3.8rem;
+  padding: 0 3.0rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* line 27, src/sass/vendors/milligram/_Button.sass */
+.button:focus, .button:hover,
+button:focus,
+button:hover,
+input[type='button']:focus,
+input[type='button']:hover,
+input[type='reset']:focus,
+input[type='reset']:hover,
+input[type='submit']:focus,
+input[type='submit']:hover {
+  background-color: #606c76;
+  border-color: #606c76;
+  color: #fff;
+  outline: 0;
+}
+
+/* line 34, src/sass/vendors/milligram/_Button.sass */
+.button[disabled],
+button[disabled],
+input[type='button'][disabled],
+input[type='reset'][disabled],
+input[type='submit'][disabled] {
+  cursor: default;
+  opacity: .5;
+}
+
+/* line 38, src/sass/vendors/milligram/_Button.sass */
+.button[disabled]:focus, .button[disabled]:hover,
+button[disabled]:focus,
+button[disabled]:hover,
+input[type='button'][disabled]:focus,
+input[type='button'][disabled]:hover,
+input[type='reset'][disabled]:focus,
+input[type='reset'][disabled]:hover,
+input[type='submit'][disabled]:focus,
+input[type='submit'][disabled]:hover {
+  background-color: #22262e;
+  border-color: #22262e;
+}
+
+/* line 43, src/sass/vendors/milligram/_Button.sass */
+.button.button-outline,
+button.button-outline,
+input[type='button'].button-outline,
+input[type='reset'].button-outline,
+input[type='submit'].button-outline {
+  background-color: transparent;
+  color: #22262e;
+}
+
+/* line 47, src/sass/vendors/milligram/_Button.sass */
+.button.button-outline:focus, .button.button-outline:hover,
+button.button-outline:focus,
+button.button-outline:hover,
+input[type='button'].button-outline:focus,
+input[type='button'].button-outline:hover,
+input[type='reset'].button-outline:focus,
+input[type='reset'].button-outline:hover,
+input[type='submit'].button-outline:focus,
+input[type='submit'].button-outline:hover {
+  background-color: transparent;
+  border-color: #606c76;
+  color: #606c76;
+}
+
+/* line 55, src/sass/vendors/milligram/_Button.sass */
+.button.button-outline[disabled]:focus, .button.button-outline[disabled]:hover,
+button.button-outline[disabled]:focus,
+button.button-outline[disabled]:hover,
+input[type='button'].button-outline[disabled]:focus,
+input[type='button'].button-outline[disabled]:hover,
+input[type='reset'].button-outline[disabled]:focus,
+input[type='reset'].button-outline[disabled]:hover,
+input[type='submit'].button-outline[disabled]:focus,
+input[type='submit'].button-outline[disabled]:hover {
+  border-color: inherit;
+  color: #22262e;
+}
+
+/* line 60, src/sass/vendors/milligram/_Button.sass */
+.button.button-clear,
+button.button-clear,
+input[type='button'].button-clear,
+input[type='reset'].button-clear,
+input[type='submit'].button-clear {
+  background-color: transparent;
+  border-color: transparent;
+  color: #22262e;
+}
+
+/* line 65, src/sass/vendors/milligram/_Button.sass */
+.button.button-clear:focus, .button.button-clear:hover,
+button.button-clear:focus,
+button.button-clear:hover,
+input[type='button'].button-clear:focus,
+input[type='button'].button-clear:hover,
+input[type='reset'].button-clear:focus,
+input[type='reset'].button-clear:hover,
+input[type='submit'].button-clear:focus,
+input[type='submit'].button-clear:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: #606c76;
+}
+
+/* line 73, src/sass/vendors/milligram/_Button.sass */
+.button.button-clear[disabled]:focus, .button.button-clear[disabled]:hover,
+button.button-clear[disabled]:focus,
+button.button-clear[disabled]:hover,
+input[type='button'].button-clear[disabled]:focus,
+input[type='button'].button-clear[disabled]:hover,
+input[type='reset'].button-clear[disabled]:focus,
+input[type='reset'].button-clear[disabled]:hover,
+input[type='submit'].button-clear[disabled]:focus,
+input[type='submit'].button-clear[disabled]:hover {
+  color: #22262e;
+}
+
+/* line 5, src/sass/vendors/milligram/_Form.sass */
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+textarea,
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 0.1rem solid #d1d1d1;
+  border-radius: .4rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  height: 3.8rem;
+  padding: .6rem 1.0rem;
+  width: 100%;
+}
+
+/* line 24, src/sass/vendors/milligram/_Form.sass */
+input[type='email']:focus,
+input[type='number']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='text']:focus,
+input[type='url']:focus,
+textarea:focus,
+select:focus {
+  border-color: #22262e;
+  outline: 0;
+}
+
+/* line 28, src/sass/vendors/milligram/_Form.sass */
+select {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+  padding-right: 3.0rem;
+}
+
+/* line 32, src/sass/vendors/milligram/_Form.sass */
+select:focus {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#9b4dca" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
+}
+
+/* line 35, src/sass/vendors/milligram/_Form.sass */
+textarea {
+  min-height: 6.5rem;
+}
+
+/* line 38, src/sass/vendors/milligram/_Form.sass */
+label,
+legend {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+/* line 45, src/sass/vendors/milligram/_Form.sass */
+fieldset {
+  border-width: 0;
+  padding: 0;
+}
+
+/* line 49, src/sass/vendors/milligram/_Form.sass */
+input[type='checkbox'],
+input[type='radio'] {
+  display: inline;
+}
+
+/* line 53, src/sass/vendors/milligram/_Form.sass */
+.label-inline {
+  display: inline-block;
+  font-weight: normal;
+  margin-left: .5rem;
+}
+
+/* line 6, src/sass/vendors/milligram/_Grid.sass */
+.container {
+  margin: 0 auto;
+  max-width: 112.0rem;
+  padding: 0 2.0rem;
+  position: relative;
+  width: 100%;
+}
+
+/* line 18, src/sass/vendors/milligram/_Grid.sass */
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 24, src/sass/vendors/milligram/_Grid.sass */
+.row.row-no-padding {
+  padding: 0;
+}
+
+/* line 27, src/sass/vendors/milligram/_Grid.sass */
+.row.row-no-padding > .column {
+  padding: 0;
+}
+
+/* line 30, src/sass/vendors/milligram/_Grid.sass */
+.row.row-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* line 35, src/sass/vendors/milligram/_Grid.sass */
+.row.row-top {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* line 38, src/sass/vendors/milligram/_Grid.sass */
+.row.row-bottom {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+/* line 41, src/sass/vendors/milligram/_Grid.sass */
+.row.row-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 44, src/sass/vendors/milligram/_Grid.sass */
+.row.row-stretch {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+/* line 47, src/sass/vendors/milligram/_Grid.sass */
+.row.row-baseline {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+/* line 50, src/sass/vendors/milligram/_Grid.sass */
+.row .column {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-left: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* line 59, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-offset-10 {
+  margin-left: 10%;
+}
+
+/* line 62, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-offset-20 {
+  margin-left: 20%;
+}
+
+/* line 65, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-offset-25 {
+  margin-left: 25%;
+}
+
+/* line 68, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-offset-33, .row .column.column-offset-34 {
+  margin-left: 33.3333%;
+}
+
+/* line 72, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-offset-50 {
+  margin-left: 50%;
+}
+
+/* line 75, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-offset-66, .row .column.column-offset-67 {
+  margin-left: 66.6666%;
+}
+
+/* line 79, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-offset-75 {
+  margin-left: 75%;
+}
+
+/* line 82, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-offset-80 {
+  margin-left: 80%;
+}
+
+/* line 85, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-offset-90 {
+  margin-left: 90%;
+}
+
+/* line 92, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-10 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+  max-width: 10%;
+}
+
+/* line 96, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-20 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  max-width: 20%;
+}
+
+/* line 100, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-25 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  max-width: 25%;
+}
+
+/* line 104, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-33, .row .column.column-34 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.3333%;
+          flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+
+/* line 109, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-40 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  max-width: 40%;
+}
+
+/* line 113, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-50 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* line 117, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-60 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  max-width: 60%;
+}
+
+/* line 121, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-66, .row .column.column-67 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 66.6666%;
+          flex: 0 0 66.6666%;
+  max-width: 66.6666%;
+}
+
+/* line 126, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-75 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+  max-width: 75%;
+}
+
+/* line 130, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-80 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
+  max-width: 80%;
+}
+
+/* line 134, src/sass/vendors/milligram/_Grid.sass */
+.row .column.column-90 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 90%;
+          flex: 0 0 90%;
+  max-width: 90%;
+}
+
+/* line 139, src/sass/vendors/milligram/_Grid.sass */
+.row .column .column-top {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+/* line 142, src/sass/vendors/milligram/_Grid.sass */
+.row .column .column-bottom {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+/* line 145, src/sass/vendors/milligram/_Grid.sass */
+.row .column .column-center {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+@media (min-width: 40rem) {
+  /* line 151, src/sass/vendors/milligram/_Grid.sass */
+  .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: -1.0rem;
+    width: calc(100% + 2.0rem);
+  }
+  /* line 156, src/sass/vendors/milligram/_Grid.sass */
+  .row .column {
+    margin-bottom: inherit;
+    padding: 0 1.0rem;
+  }
+}
+
+/* line 5, src/sass/vendors/milligram/_Image.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 5, src/sass/vendors/milligram/_Link.sass */
+a {
+  color: #22262e;
+  text-decoration: none;
+}
+
+/* line 9, src/sass/vendors/milligram/_Link.sass */
+a:focus, a:hover {
+  color: #606c76;
+}
+
+/* line 5, src/sass/vendors/milligram/_List.sass */
+dl,
+ol,
+ul {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+/* line 12, src/sass/vendors/milligram/_List.sass */
+dl dl,
+dl ol,
+dl ul,
+ol dl,
+ol ol,
+ol ul,
+ul dl,
+ul ol,
+ul ul {
+  font-size: 90%;
+  margin: 1.5rem 0 1.5rem 3.0rem;
+}
+
+/* line 18, src/sass/vendors/milligram/_List.sass */
+ol {
+  list-style: decimal inside;
+}
+
+/* line 21, src/sass/vendors/milligram/_List.sass */
+ul {
+  list-style: circle inside;
+}
+
+/* line 5, src/sass/vendors/milligram/_Spacing.sass */
+.button,
+button,
+dd,
+dt,
+li {
+  margin-bottom: 1.0rem;
+}
+
+/* line 12, src/sass/vendors/milligram/_Spacing.sass */
+fieldset,
+input,
+select,
+textarea {
+  margin-bottom: 1.5rem;
+}
+
+/* line 18, src/sass/vendors/milligram/_Spacing.sass */
+blockquote,
+dl,
+figure,
+form,
+ol,
+p,
+pre,
+table,
+ul {
+  margin-bottom: 2.5rem;
+}
+
+/* line 5, src/sass/vendors/milligram/_Typography.sass */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 9, src/sass/vendors/milligram/_Typography.sass */
+p {
+  margin-top: 0;
+}
+
+/* line 12, src/sass/vendors/milligram/_Typography.sass */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  letter-spacing: -.1rem;
+  margin-bottom: 2.0rem;
+  margin-top: 0;
+}
+
+/* line 23, src/sass/vendors/milligram/_Typography.sass */
+h1 {
+  font-size: 4.6rem;
+  line-height: 1.2;
+}
+
+/* line 27, src/sass/vendors/milligram/_Typography.sass */
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+}
+
+/* line 31, src/sass/vendors/milligram/_Typography.sass */
+h3 {
+  font-size: 2.8rem;
+  line-height: 1.3;
+}
+
+/* line 35, src/sass/vendors/milligram/_Typography.sass */
+h4 {
+  font-size: 2.2rem;
+  letter-spacing: -.08rem;
+  line-height: 1.35;
+}
+
+/* line 40, src/sass/vendors/milligram/_Typography.sass */
+h5 {
+  font-size: 1.8rem;
+  letter-spacing: -.05rem;
+  line-height: 1.5;
+}
+
+/* line 45, src/sass/vendors/milligram/_Typography.sass */
+h6 {
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+/* line 8, src/sass/vendors/milligram/_Utility.sass */
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: table;
+}
+
+/* line 14, src/sass/vendors/milligram/_Utility.sass */
+.float-left {
+  float: left;
+}
+
+/* line 17, src/sass/vendors/milligram/_Utility.sass */
+.float-right {
+  float: right;
+}
+
+/**
+ * @section Base Styles
+ */
+/* line 18, src/sass/components/_base.scss */
+body {
+  font-family: "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background-color: #15181e;
+  color: #ffffff;
+}
+
+/* line 24, src/sass/components/_base.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-align: center;
+  letter-spacing: inherit;
+  margin-bottom: 3rem;
+}
+
+/* line 36, src/sass/components/_base.scss */
+h4 {
+  text-transform: uppercase;
+}
+
+/* line 40, src/sass/components/_base.scss */
+a {
+  color: #ffffff;
+}
+
+/* line 44, src/sass/components/_base.scss */
+.section-figure {
+  background-color: #242831;
+  position: relative;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+}
+
+/* line 49, src/sass/components/_base.scss */
+.section-figure::after {
+  content: url(../img/section-bottom.svg);
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  left: 0;
+  height: 50px;
+}
+
+/* line 59, src/sass/components/_base.scss */
+.section-header {
+  display: inline-block;
+  font-size: 3rem;
+  position: relative;
+  text-align: left;
+  height: 80px;
+  margin-left: -2rem;
+  margin-bottom: 40px;
+  padding: 20px 20px 20px 107px;
+  border-style: solid;
+  border-width: 2px 0 2px 2px;
+}
+
+/* line 70, src/sass/components/_base.scss */
+.section-header::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 77px;
+  height: 77px;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 81, src/sass/components/_base.scss */
+.section-header::after {
+  content: '';
+  position: absolute;
+  right: -29px;
+  top: 10px;
+  display: inline-block;
+  height: 56.55px;
+  width: 56.55px;
+  border-style: solid;
+  border-width: 2px 0 0 2px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+/* line 3, src/sass/components/_mainnav.scss */
+.main-nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 50%;
+  margin-left: -calc(150px);
+  -webkit-box-shadow: 2px 2px 3px #242831;
+          box-shadow: 2px 2px 3px #242831;
+}
+
+/* line 12, src/sass/components/_mainnav.scss */
+.main-nav-items:last-child {
+  border: none;
+}
+
+/* line 17, src/sass/components/_mainnav.scss */
+.main-nav-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 21, src/sass/components/_mainnav.scss */
+.main-nav-item a {
+  font-size: 0;
+  line-height: 60px;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-right: 2px solid #ddd;
+  position: relative;
+}
+
+/* line 30, src/sass/components/_mainnav.scss */
+.main-nav-item a::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 12px;
+  margin-left: 13px;
+}
+
+/* line 44, src/sass/components/_mainnav.scss */
+.nav-top a {
+  background-color: #242831;
+  border: none;
+}
+
+/* line 47, src/sass/components/_mainnav.scss */
+.nav-top a::before {
+  background-image: url("../img/menu.svg");
+}
+
+/* line 53, src/sass/components/_mainnav.scss */
+.nav-profile a::before {
+  background-image: url("../img/profile.svg");
+}
+
+/* line 57, src/sass/components/_mainnav.scss */
+.nav-resume a::before {
+  background-image: url("../img/resume.svg");
+}
+
+/* line 61, src/sass/components/_mainnav.scss */
+.nav-portfolio a::before {
+  background-image: url("../img/portfolio.svg");
+}
+
+/* line 65, src/sass/components/_mainnav.scss */
+.nav-contact a::before {
+  background-image: url("../img/contact.svg");
+}
+
+/* line 1, src/sass/components/_online-links.scss */
+.online-links {
+  margin-top: 90px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* line 5, src/sass/components/_online-links.scss */
+.online-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* line 10, src/sass/components/_online-links.scss */
+.online-links a :last-child {
+  margin-right: none;
+}
+
+/* line 2, src/sass/components/_contact.scss */
+.contact .section-header {
+  border-color: #4a89dc;
+}
+
+/* line 4, src/sass/components/_contact.scss */
+.contact .section-header::before {
+  background-color: #4a89dc;
+  background-image: url("../img/contact.svg");
+}
+
+/* line 8, src/sass/components/_contact.scss */
+.contact .section-header::after {
+  border-color: #4a89dc;
+}
+
+/* line 12, src/sass/components/_contact.scss */
+.contact input, .contact textarea, .contact button, .contact button:hover, .contact button:active {
+  border-color: #4a89dc;
+  color: #ffffff;
+}
+
+/* line 16, src/sass/components/_contact.scss */
+.contact input:focus, .contact textarea:focus {
+  border-color: #75a5e4;
+}
+
+/* line 19, src/sass/components/_contact.scss */
+.contact .online-links {
+  text-align: center;
+}
+
+/* line 23, src/sass/components/_contact.scss */
+.contact .footer-contacts {
+  max-width: 70%;
+  margin: 0 auto 30px;
+}
+
+/* line 26, src/sass/components/_contact.scss */
+.contact .footer-contacts a {
+  display: block;
+  padding-left: 40px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* line 31, src/sass/components/_contact.scss */
+.contact .footer-contacts a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 34, src/sass/components/_contact.scss */
+.contact .footer-contacts a:hover, .contact .footer-contacts a:active, .contact .footer-contacts a:focus {
+  color: #ffffff;
+}
+
+/* line 38, src/sass/components/_contact.scss */
+.contact .footer-contacts .phone::before {
+  background-image: url("../img/smartphone.svg");
+}
+
+/* line 41, src/sass/components/_contact.scss */
+.contact .footer-contacts .email::before {
+  background-image: url("../img/email.svg");
+}
+
+/* line 44, src/sass/components/_contact.scss */
+.contact .footer-contacts .skype::before {
+  background-image: url("../img/skype.svg");
+}
+
+/* line 2, src/sass/components/_resume.scss */
+.resume .section-header {
+  border-color: #37bc9b;
+}
+
+/* line 4, src/sass/components/_resume.scss */
+.resume .section-header::before {
+  background-color: #37bc9b;
+  background-image: url("../img/resume.svg");
+}
+
+/* line 8, src/sass/components/_resume.scss */
+.resume .section-header::after {
+  border-color: #37bc9b;
+}
+
+/* line 12, src/sass/components/_resume.scss */
+.resume h3 {
+  text-align: left;
+}
+
+/* line 17, src/sass/components/_resume.scss */
+.resume-vcard {
+  text-align: right;
+}
+
+/* line 20, src/sass/components/_resume.scss */
+.resume-vcard a {
+  display: inline-block;
+  padding: 0 40px;
+  height: 80px;
+  background-color: #ffffff;
+  color: #15181e;
+  margin-right: -2rem;
+  margin-bottom: 2rem;
+}
+
+/* line 28, src/sass/components/_resume.scss */
+.resume-vcard a::after {
+  content: '';
+  display: block;
+  margin: 0 auto 15px auto;
+  width: 30px;
+  height: 30px;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/arrow.svg");
+  margin-top: 9px;
+  -webkit-filter: brightness();
+          filter: brightness();
+}
+
+/* line 37, src/sass/components/_resume.scss */
+.employments, .education {
+  padding-left: 30px;
+  margin-left: 12px;
+  border-left: 5px solid #fff;
+}
+
+/* line 41, src/sass/components/_resume.scss */
+.employments p, .education p {
+  margin-bottom: 10px;
+}
+
+/* line 44, src/sass/components/_resume.scss */
+.employments .employment, .employments .education-item, .education .employment, .education .education-item {
+  list-style: none;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+/* line 48, src/sass/components/_resume.scss */
+.employments .employment::before, .employments .education-item::before, .education .employment::before, .education .education-item::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #37bc9b;
+  border-radius: 50%;
+  left: -45px;
+}
+
+/* line 57, src/sass/components/_resume.scss */
+.employments .employment li, .employments .education-item li, .education .employment li, .education .education-item li {
+  font-size: 1.6rem;
+  list-style: disc;
+}
+
+/* line 61, src/sass/components/_resume.scss */
+.employments .employment .employment-title, .employments .employment .education-provider, .employments .education-item .employment-title, .employments .education-item .education-provider, .education .employment .employment-title, .education .employment .education-provider, .education .education-item .employment-title, .education .education-item .education-provider {
+  font-size: 2.1rem;
+  display: inline-block;
+  max-width: 70%;
+  margin-top: -5px;
+  text-transform: uppercase;
+}
+
+/* line 68, src/sass/components/_resume.scss */
+.employments .employment .employment-dates, .employments .employment .education-dates, .employments .education-item .employment-dates, .employments .education-item .education-dates, .education .employment .employment-dates, .education .employment .education-dates, .education .education-item .employment-dates, .education .education-item .education-dates {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.6rem;
+}
+
+/* line 74, src/sass/components/_resume.scss */
+.employments .employment .employment-position, .employments .employment .education-type, .employments .education-item .employment-position, .employments .education-item .education-type, .education .employment .employment-position, .education .employment .education-type, .education .education-item .employment-position, .education .education-item .education-type {
+  font-size: 1.9rem;
+}
+
+/* line 80, src/sass/components/_resume.scss */
+.web-tech, .os, .other-tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/* line 84, src/sass/components/_resume.scss */
+.web-tech li, .os li, .other-tech li {
+  list-style: none;
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  margin: 0 10px 50px;
+}
+
+/* line 90, src/sass/components/_resume.scss */
+.web-tech li::before, .os li::before, .other-tech li::before {
+  content: '';
+  display: block;
+  margin: 0 auto 55px auto;
+  width: 110px;
+  height: 110px;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+  background: url("../img/logos.png") no-repeat;
+  margin-bottom: 20px;
+}
+
+/* line 99, src/sass/components/_resume.scss */
+.web-tech .ansible::before, .os .ansible::before, .other-tech .ansible::before {
+  background-position: -2px -0px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 100, src/sass/components/_resume.scss */
+.web-tech .apache::before, .os .apache::before, .other-tech .apache::before {
+  background-position: -114px -0px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 101, src/sass/components/_resume.scss */
+.web-tech .bash::before, .os .bash::before, .other-tech .bash::before {
+  background-position: -226px -0px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 102, src/sass/components/_resume.scss */
+.web-tech .bootstrap::before, .os .bootstrap::before, .other-tech .bootstrap::before {
+  background-position: -338px -0px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 103, src/sass/components/_resume.scss */
+.web-tech .centos::before, .os .centos::before, .other-tech .centos::before {
+  background-position: -450px -0px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 104, src/sass/components/_resume.scss */
+.web-tech .css3::before, .os .css3::before, .other-tech .css3::before {
+  background-position: -2px -112px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 105, src/sass/components/_resume.scss */
+.web-tech .docker::before, .os .docker::before, .other-tech .docker::before {
+  background-position: -114px -112px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 106, src/sass/components/_resume.scss */
+.web-tech .g-suite::before, .os .g-suite::before, .other-tech .g-suite::before {
+  background-position: -226px -112px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 107, src/sass/components/_resume.scss */
+.web-tech .git::before, .os .git::before, .other-tech .git::before {
+  background-position: -338px -112px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 108, src/sass/components/_resume.scss */
+.web-tech .github-pages::before, .os .github-pages::before, .other-tech .github-pages::before {
+  background-position: -450px -112px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 109, src/sass/components/_resume.scss */
+.web-tech .google-apps-script::before, .os .google-apps-script::before, .other-tech .google-apps-script::before {
+  background-position: -2px -224px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 110, src/sass/components/_resume.scss */
+.web-tech .gulp::before, .os .gulp::before, .other-tech .gulp::before {
+  background-position: -114px -224px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 111, src/sass/components/_resume.scss */
+.web-tech .html5::before, .os .html5::before, .other-tech .html5::before {
+  background-position: -226px -224px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 112, src/sass/components/_resume.scss */
+.web-tech .iptables::before, .os .iptables::before, .other-tech .iptables::before {
+  background-position: -338px -224px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 113, src/sass/components/_resume.scss */
+.web-tech .joomla::before, .os .joomla::before, .other-tech .joomla::before {
+  background-position: -450px -224px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 114, src/sass/components/_resume.scss */
+.web-tech .jquery::before, .os .jquery::before, .other-tech .jquery::before {
+  background-position: -2px -336px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 115, src/sass/components/_resume.scss */
+.web-tech .js::before, .os .js::before, .other-tech .js::before {
+  background-position: -114px -336px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 116, src/sass/components/_resume.scss */
+.web-tech .kvm::before, .os .kvm::before, .other-tech .kvm::before {
+  background-position: -226px -336px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 117, src/sass/components/_resume.scss */
+.web-tech .laravel::before, .os .laravel::before, .other-tech .laravel::before {
+  background-position: -338px -336px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 118, src/sass/components/_resume.scss */
+.web-tech .mysql::before, .os .mysql::before, .other-tech .mysql::before {
+  background-position: -450px -336px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 119, src/sass/components/_resume.scss */
+.web-tech .nginx::before, .os .nginx::before, .other-tech .nginx::before {
+  background-position: -2px -448px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 120, src/sass/components/_resume.scss */
+.web-tech .openstack::before, .os .openstack::before, .other-tech .openstack::before {
+  background-position: -114px -448px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 121, src/sass/components/_resume.scss */
+.web-tech .openvpn::before, .os .openvpn::before, .other-tech .openvpn::before {
+  background-position: -226px -448px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 122, src/sass/components/_resume.scss */
+.web-tech .php::before, .os .php::before, .other-tech .php::before {
+  background-position: -338px -448px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 123, src/sass/components/_resume.scss */
+.web-tech .postgresql::before, .os .postgresql::before, .other-tech .postgresql::before {
+  background-position: -450px -448px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 124, src/sass/components/_resume.scss */
+.web-tech .proxmox::before, .os .proxmox::before, .other-tech .proxmox::before {
+  background-position: -2px -560px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 125, src/sass/components/_resume.scss */
+.web-tech .squid::before, .os .squid::before, .other-tech .squid::before {
+  background-position: -114px -560px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 126, src/sass/components/_resume.scss */
+.web-tech .thinstation::before, .os .thinstation::before, .other-tech .thinstation::before {
+  background-position: -226px -560px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 127, src/sass/components/_resume.scss */
+.web-tech .ubuntu::before, .os .ubuntu::before, .other-tech .ubuntu::before {
+  background-position: -338px -560px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 128, src/sass/components/_resume.scss */
+.web-tech .vagrant::before, .os .vagrant::before, .other-tech .vagrant::before {
+  background-position: -450px -560px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 129, src/sass/components/_resume.scss */
+.web-tech .wp::before, .os .wp::before, .other-tech .wp::before {
+  background-position: -2px -672px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 130, src/sass/components/_resume.scss */
+.web-tech .xen::before, .os .xen::before, .other-tech .xen::before {
+  background-position: -114px -672px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 131, src/sass/components/_resume.scss */
+.web-tech .zabbix::before, .os .zabbix::before, .other-tech .zabbix::before {
+  background-position: -226px -672px;
+  width: 110px;
+  height: 110px;
+}
+
+/* line 2, src/sass/components/_profile.scss */
+.profile .section-header {
+  border-color: #d63d3f;
+}
+
+/* line 4, src/sass/components/_profile.scss */
+.profile .section-header::before {
+  background-color: #d63d3f;
+  background-image: url("../img/profile.svg");
+}
+
+/* line 8, src/sass/components/_profile.scss */
+.profile .section-header::after {
+  border-color: #d63d3f;
+}
+
+/* line 14, src/sass/components/_profile.scss */
+.profile-photo {
+  text-align: center;
+}
+
+/* line 16, src/sass/components/_profile.scss */
+.profile-photo img {
+  display: inline-block;
+  border-radius: 50%;
+  max-width: 220px;
+  margin-bottom: 3rem;
+}
+
+/* line 22, src/sass/components/_profile.scss */
+.profile-photo p {
+  font-size: 2.5rem;
+}
+
+/* line 25, src/sass/components/_profile.scss */
+.profile-photo h1 {
+  font-size: 3.5rem;
+  line-height: auto;
+  margin-top: 1rem;
+}
+
+/* line 35, src/sass/components/_profile.scss */
+.services .service h4::before {
+  content: '';
+  display: block;
+  margin: 0 auto 40px auto;
+  width: 80px;
+  height: 80px;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 40, src/sass/components/_profile.scss */
+.services .service .website-creation::before {
+  background-image: url("../img/service-websites-creation.svg");
+}
+
+/* line 45, src/sass/components/_profile.scss */
+.services .service .seo::before {
+  background-image: url("../img/service-seo.svg");
+}
+
+/* line 50, src/sass/components/_profile.scss */
+.services .service .problem-solving::before {
+  background-image: url("../img/service-problem-solving.svg");
+}
+
+@media screen and (max-width: 625px) {
+  /* line 2, src/sass/components/_media.scss */
+  .row .column.column-33 {
+    max-width: 100%;
+  }
+  /* line 5, src/sass/components/_media.scss */
+  .resume-vcard {
+    text-align: center;
+  }
+  /* line 7, src/sass/components/_media.scss */
+  .resume-vcard a {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  /* line 14, src/sass/components/_media.scss */
+  .main-nav-items {
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 150px;
+    top: 10%;
+  }
+  /* line 20, src/sass/components/_media.scss */
+  .online-links {
+    margin-top: 20px;
+    text-align: right;
+  }
+}
