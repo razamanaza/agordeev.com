@@ -662,14 +662,19 @@ h6 {
 /**
  * @section Base Styles
  */
-/* line 18, src/sass/components/_base.scss */
+/* line 17, src/sass/components/_base.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+/* line 21, src/sass/components/_base.scss */
 body {
   font-family: "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   background-color: #15181e;
   color: #ffffff;
 }
 
-/* line 24, src/sass/components/_base.scss */
+/* line 27, src/sass/components/_base.scss */
 h1,
 h2,
 h3,
@@ -682,17 +687,17 @@ h6 {
   margin-bottom: 3rem;
 }
 
-/* line 36, src/sass/components/_base.scss */
+/* line 39, src/sass/components/_base.scss */
 h4 {
   text-transform: uppercase;
 }
 
-/* line 40, src/sass/components/_base.scss */
+/* line 43, src/sass/components/_base.scss */
 a {
   color: #ffffff;
 }
 
-/* line 44, src/sass/components/_base.scss */
+/* line 47, src/sass/components/_base.scss */
 .section-figure {
   background-color: #333946;
   position: relative;
@@ -700,7 +705,7 @@ a {
   padding-bottom: 50px;
 }
 
-/* line 49, src/sass/components/_base.scss */
+/* line 52, src/sass/components/_base.scss */
 .section-figure::after {
   content: url(../img/bottom.svg);
   position: absolute;
@@ -711,6 +716,28 @@ a {
 }
 
 /* line 60, src/sass/components/_base.scss */
+.section-figure .totop {
+  text-align: center;
+  position: relative;
+}
+
+/* line 63, src/sass/components/_base.scss */
+.section-figure .totop a {
+  position: absolute;
+  bottom: -50px;
+  z-index: 10;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: -15px;
+  background-image: url("../img/arrow.svg");
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 80, src/sass/components/_base.scss */
 .section-header {
   display: inline-block;
   font-size: 3rem;
@@ -724,7 +751,7 @@ a {
   border-width: 2px 0 2px 2px;
 }
 
-/* line 71, src/sass/components/_base.scss */
+/* line 91, src/sass/components/_base.scss */
 .section-header::before {
   content: '';
   position: absolute;
@@ -737,7 +764,7 @@ a {
   background-position: center;
 }
 
-/* line 82, src/sass/components/_base.scss */
+/* line 102, src/sass/components/_base.scss */
 .section-header::after {
   content: '';
   position: absolute;
