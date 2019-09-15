@@ -13,3 +13,13 @@
   background-position: center;
   background-size: cover;
 }
+
+@mixin left-icon($size) {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: $size;
+  height: $size;
+  background-repeat: no-repeat;
+  background-position: center;
+}

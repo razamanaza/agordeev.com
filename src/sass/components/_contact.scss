@@ -1,0 +1,50 @@
+.contact {
+  .section-header {
+    border-color: $contact-color;
+    &::before {
+      background-color: $contact-color;
+      background-image: url('../img/contact.svg');
+    }
+    &::after {
+      border-color: $contact-color;
+    }
+  }
+  input, textarea, button, button:hover, button:active {
+    border-color: $contact-color;
+    color: $main-color;
+  }
+  input:focus, textarea:focus {
+    border-color: lighten($contact-color, 10%);
+  }
+  .online-links {
+    text-align: center;
+  }
+
+  .footer-contacts {
+    max-width: 70%;
+    margin: 0 auto 30px;
+    a {
+      display: block;
+      padding-left: 40px;
+      position: relative;
+      margin-bottom: 20px;
+      &::before {
+        @include left-icon(30px);
+      }
+      &:hover, &:active, &:focus {
+        color: $main-color;
+      }
+    }
+    .phone::before {
+      background-image: url('../img/smartphone.svg');
+    }
+    .email::before {
+      background-image: url('../img/email.svg');
+    }
+    .skype::before {
+      background-image: url('../img/skype.svg');
+    }
+  }
+}
+
+
