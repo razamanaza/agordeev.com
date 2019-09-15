@@ -710,7 +710,7 @@ a {
   height: 40px;
 }
 
-/* line 59, src/sass/components/_base.scss */
+/* line 60, src/sass/components/_base.scss */
 .section-header {
   display: inline-block;
   font-size: 3rem;
@@ -724,7 +724,7 @@ a {
   border-width: 2px 0 2px 2px;
 }
 
-/* line 70, src/sass/components/_base.scss */
+/* line 71, src/sass/components/_base.scss */
 .section-header::before {
   content: '';
   position: absolute;
@@ -737,7 +737,7 @@ a {
   background-position: center;
 }
 
-/* line 81, src/sass/components/_base.scss */
+/* line 82, src/sass/components/_base.scss */
 .section-header::after {
   content: '';
   position: absolute;
