@@ -25,7 +25,6 @@
     width: $mainnav-size;
     height: $mainnav-size;
     background-color: $main-color;
-    border-right: 2px solid #ddd;
     position: relative;
     &::before {
       content: "";
@@ -51,17 +50,17 @@
 }
 
 .nav-profile a::before {
-  background-image: url('../img/profile.svg');
+  background-image: url('../img/profile-color.svg');
 }
 
 .nav-resume a::before {
-  background-image: url('../img/resume.svg');
+  background-image: url('../img/resume-color.svg');
 }
 
 .nav-portfolio a::before {
-  background-image: url('../img/portfolio.svg');
+  background-image: url('../img/portfolio-color.svg');
 }
 
 .nav-contact a::before {
-  background-image: url('../img/contact.svg');
+  background-image: url('../img/contact-color.svg');
 }
