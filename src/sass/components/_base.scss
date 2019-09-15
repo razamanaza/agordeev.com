@@ -5,7 +5,7 @@
 $main-font: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $secondary-font: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $body-bg-color: #15181e;
-$bg-color: #242831;
+$bg-color: #333946;
 $main-color: #ffffff;
 $mainnav-size: 60px;
 $mainnav-icon-size: 35px;
@@ -47,12 +47,12 @@ a {
   margin-bottom: 100px;
   padding-bottom: 50px;
   &::after {
-    content: url(../img/section-bottom.svg);
+    content: url(../img/bottom.svg);
     position: absolute;
-    bottom: -50px;
+    bottom: -39px;
     width: 100%;
     left: 0;
-    height: 50px;
+    height: 40px;
   }
 }
 

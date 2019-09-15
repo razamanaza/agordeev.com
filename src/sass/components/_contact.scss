@@ -13,6 +13,9 @@
     border-color: $contact-color;
     color: $main-color;
   }
+  button:hover {
+    background-color: $bg-color;
+  }
   input:focus, textarea:focus {
     border-color: lighten($contact-color, 10%);
   }
