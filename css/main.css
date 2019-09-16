@@ -1185,32 +1185,30 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/arrow.svg");
+  background-image: url("../img/arrow-black.svg");
   margin-top: 9px;
-  -webkit-filter: brightness();
-          filter: brightness();
 }
 
-/* line 37, src/sass/components/_resume.scss */
+/* line 36, src/sass/components/_resume.scss */
 .employments, .education {
   padding-left: 30px;
   margin-left: 12px;
   border-left: 5px solid #fff;
 }
 
-/* line 41, src/sass/components/_resume.scss */
+/* line 40, src/sass/components/_resume.scss */
 .employments p, .education p {
   margin-bottom: 10px;
 }
 
-/* line 44, src/sass/components/_resume.scss */
+/* line 43, src/sass/components/_resume.scss */
 .employments .employment, .employments .education-item, .education .employment, .education .education-item {
   list-style: none;
   position: relative;
   margin-bottom: 50px;
 }
 
-/* line 48, src/sass/components/_resume.scss */
+/* line 47, src/sass/components/_resume.scss */
 .employments .employment::before, .employments .education-item::before, .education .employment::before, .education .education-item::before {
   content: '';
   position: absolute;
@@ -1221,13 +1219,13 @@ a {
   left: -45px;
 }
 
-/* line 57, src/sass/components/_resume.scss */
+/* line 56, src/sass/components/_resume.scss */
 .employments .employment li, .employments .education-item li, .education .employment li, .education .education-item li {
   font-size: 1.6rem;
   list-style: disc;
 }
 
-/* line 61, src/sass/components/_resume.scss */
+/* line 60, src/sass/components/_resume.scss */
 .employments .employment .employment-title, .employments .employment .education-provider, .employments .education-item .employment-title, .employments .education-item .education-provider, .education .employment .employment-title, .education .employment .education-provider, .education .education-item .employment-title, .education .education-item .education-provider {
   font-size: 2.1rem;
   display: inline-block;
@@ -1236,7 +1234,7 @@ a {
   text-transform: uppercase;
 }
 
-/* line 68, src/sass/components/_resume.scss */
+/* line 67, src/sass/components/_resume.scss */
 .employments .employment .employment-dates, .employments .employment .education-dates, .employments .education-item .employment-dates, .employments .education-item .education-dates, .education .employment .employment-dates, .education .employment .education-dates, .education .education-item .employment-dates, .education .education-item .education-dates {
   position: absolute;
   right: 0;
@@ -1244,12 +1242,12 @@ a {
   font-size: 1.6rem;
 }
 
-/* line 74, src/sass/components/_resume.scss */
+/* line 73, src/sass/components/_resume.scss */
 .employments .employment .employment-position, .employments .employment .education-type, .employments .education-item .employment-position, .employments .education-item .education-type, .education .employment .employment-position, .education .employment .education-type, .education .education-item .employment-position, .education .education-item .education-type {
   font-size: 1.9rem;
 }
 
-/* line 80, src/sass/components/_resume.scss */
+/* line 79, src/sass/components/_resume.scss */
 .web-tech, .os, .other-tech {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1260,7 +1258,7 @@ a {
       justify-content: space-around;
 }
 
-/* line 84, src/sass/components/_resume.scss */
+/* line 83, src/sass/components/_resume.scss */
 .web-tech li, .os li, .other-tech li {
   list-style: none;
   display: inline-block;
@@ -1269,7 +1267,7 @@ a {
   margin: 0 10px 50px;
 }
 
-/* line 90, src/sass/components/_resume.scss */
+/* line 89, src/sass/components/_resume.scss */
 .web-tech li::before, .os li::before, .other-tech li::before {
   content: '';
   display: block;
@@ -1287,231 +1285,231 @@ a {
   margin-bottom: 20px;
 }
 
-/* line 99, src/sass/components/_resume.scss */
+/* line 98, src/sass/components/_resume.scss */
 .web-tech .ansible::before, .os .ansible::before, .other-tech .ansible::before {
   background-position: -2px -0px;
   width: 110px;
   height: 110px;
 }
 
-/* line 100, src/sass/components/_resume.scss */
+/* line 99, src/sass/components/_resume.scss */
 .web-tech .apache::before, .os .apache::before, .other-tech .apache::before {
   background-position: -114px -0px;
   width: 110px;
   height: 110px;
 }
 
-/* line 101, src/sass/components/_resume.scss */
+/* line 100, src/sass/components/_resume.scss */
 .web-tech .bash::before, .os .bash::before, .other-tech .bash::before {
   background-position: -226px -0px;
   width: 110px;
   height: 110px;
 }
 
-/* line 102, src/sass/components/_resume.scss */
+/* line 101, src/sass/components/_resume.scss */
 .web-tech .bootstrap::before, .os .bootstrap::before, .other-tech .bootstrap::before {
   background-position: -338px -0px;
   width: 110px;
   height: 110px;
 }
 
-/* line 103, src/sass/components/_resume.scss */
+/* line 102, src/sass/components/_resume.scss */
 .web-tech .centos::before, .os .centos::before, .other-tech .centos::before {
   background-position: -450px -0px;
   width: 110px;
   height: 110px;
 }
 
-/* line 104, src/sass/components/_resume.scss */
+/* line 103, src/sass/components/_resume.scss */
 .web-tech .css3::before, .os .css3::before, .other-tech .css3::before {
   background-position: -2px -112px;
   width: 110px;
   height: 110px;
 }
 
-/* line 105, src/sass/components/_resume.scss */
+/* line 104, src/sass/components/_resume.scss */
 .web-tech .docker::before, .os .docker::before, .other-tech .docker::before {
   background-position: -114px -112px;
   width: 110px;
   height: 110px;
 }
 
-/* line 106, src/sass/components/_resume.scss */
+/* line 105, src/sass/components/_resume.scss */
 .web-tech .g-suite::before, .os .g-suite::before, .other-tech .g-suite::before {
   background-position: -226px -112px;
   width: 110px;
   height: 110px;
 }
 
-/* line 107, src/sass/components/_resume.scss */
+/* line 106, src/sass/components/_resume.scss */
 .web-tech .git::before, .os .git::before, .other-tech .git::before {
   background-position: -338px -112px;
   width: 110px;
   height: 110px;
 }
 
-/* line 108, src/sass/components/_resume.scss */
+/* line 107, src/sass/components/_resume.scss */
 .web-tech .github-pages::before, .os .github-pages::before, .other-tech .github-pages::before {
   background-position: -450px -112px;
   width: 110px;
   height: 110px;
 }
 
-/* line 109, src/sass/components/_resume.scss */
+/* line 108, src/sass/components/_resume.scss */
 .web-tech .google-apps-script::before, .os .google-apps-script::before, .other-tech .google-apps-script::before {
   background-position: -2px -224px;
   width: 110px;
   height: 110px;
 }
 
-/* line 110, src/sass/components/_resume.scss */
+/* line 109, src/sass/components/_resume.scss */
 .web-tech .gulp::before, .os .gulp::before, .other-tech .gulp::before {
   background-position: -114px -224px;
   width: 110px;
   height: 110px;
 }
 
-/* line 111, src/sass/components/_resume.scss */
+/* line 110, src/sass/components/_resume.scss */
 .web-tech .html5::before, .os .html5::before, .other-tech .html5::before {
   background-position: -226px -224px;
   width: 110px;
   height: 110px;
 }
 
-/* line 112, src/sass/components/_resume.scss */
+/* line 111, src/sass/components/_resume.scss */
 .web-tech .iptables::before, .os .iptables::before, .other-tech .iptables::before {
   background-position: -338px -224px;
   width: 110px;
   height: 110px;
 }
 
-/* line 113, src/sass/components/_resume.scss */
+/* line 112, src/sass/components/_resume.scss */
 .web-tech .joomla::before, .os .joomla::before, .other-tech .joomla::before {
   background-position: -450px -224px;
   width: 110px;
   height: 110px;
 }
 
-/* line 114, src/sass/components/_resume.scss */
+/* line 113, src/sass/components/_resume.scss */
 .web-tech .jquery::before, .os .jquery::before, .other-tech .jquery::before {
   background-position: -2px -336px;
   width: 110px;
   height: 110px;
 }
 
-/* line 115, src/sass/components/_resume.scss */
+/* line 114, src/sass/components/_resume.scss */
 .web-tech .js::before, .os .js::before, .other-tech .js::before {
   background-position: -114px -336px;
   width: 110px;
   height: 110px;
 }
 
-/* line 116, src/sass/components/_resume.scss */
+/* line 115, src/sass/components/_resume.scss */
 .web-tech .kvm::before, .os .kvm::before, .other-tech .kvm::before {
   background-position: -226px -336px;
   width: 110px;
   height: 110px;
 }
 
-/* line 117, src/sass/components/_resume.scss */
+/* line 116, src/sass/components/_resume.scss */
 .web-tech .laravel::before, .os .laravel::before, .other-tech .laravel::before {
   background-position: -338px -336px;
   width: 110px;
   height: 110px;
 }
 
-/* line 118, src/sass/components/_resume.scss */
+/* line 117, src/sass/components/_resume.scss */
 .web-tech .mysql::before, .os .mysql::before, .other-tech .mysql::before {
   background-position: -450px -336px;
   width: 110px;
   height: 110px;
 }
 
-/* line 119, src/sass/components/_resume.scss */
+/* line 118, src/sass/components/_resume.scss */
 .web-tech .nginx::before, .os .nginx::before, .other-tech .nginx::before {
   background-position: -2px -448px;
   width: 110px;
   height: 110px;
 }
 
-/* line 120, src/sass/components/_resume.scss */
+/* line 119, src/sass/components/_resume.scss */
 .web-tech .openstack::before, .os .openstack::before, .other-tech .openstack::before {
   background-position: -114px -448px;
   width: 110px;
   height: 110px;
 }
 
-/* line 121, src/sass/components/_resume.scss */
+/* line 120, src/sass/components/_resume.scss */
 .web-tech .openvpn::before, .os .openvpn::before, .other-tech .openvpn::before {
   background-position: -226px -448px;
   width: 110px;
   height: 110px;
 }
 
-/* line 122, src/sass/components/_resume.scss */
+/* line 121, src/sass/components/_resume.scss */
 .web-tech .php::before, .os .php::before, .other-tech .php::before {
   background-position: -338px -448px;
   width: 110px;
   height: 110px;
 }
 
-/* line 123, src/sass/components/_resume.scss */
+/* line 122, src/sass/components/_resume.scss */
 .web-tech .postgresql::before, .os .postgresql::before, .other-tech .postgresql::before {
   background-position: -450px -448px;
   width: 110px;
   height: 110px;
 }
 
-/* line 124, src/sass/components/_resume.scss */
+/* line 123, src/sass/components/_resume.scss */
 .web-tech .proxmox::before, .os .proxmox::before, .other-tech .proxmox::before {
   background-position: -2px -560px;
   width: 110px;
   height: 110px;
 }
 
-/* line 125, src/sass/components/_resume.scss */
+/* line 124, src/sass/components/_resume.scss */
 .web-tech .squid::before, .os .squid::before, .other-tech .squid::before {
   background-position: -114px -560px;
   width: 110px;
   height: 110px;
 }
 
-/* line 126, src/sass/components/_resume.scss */
+/* line 125, src/sass/components/_resume.scss */
 .web-tech .thinstation::before, .os .thinstation::before, .other-tech .thinstation::before {
   background-position: -226px -560px;
   width: 110px;
   height: 110px;
 }
 
-/* line 127, src/sass/components/_resume.scss */
+/* line 126, src/sass/components/_resume.scss */
 .web-tech .ubuntu::before, .os .ubuntu::before, .other-tech .ubuntu::before {
   background-position: -338px -560px;
   width: 110px;
   height: 110px;
 }
 
-/* line 128, src/sass/components/_resume.scss */
+/* line 127, src/sass/components/_resume.scss */
 .web-tech .vagrant::before, .os .vagrant::before, .other-tech .vagrant::before {
   background-position: -450px -560px;
   width: 110px;
   height: 110px;
 }
 
-/* line 129, src/sass/components/_resume.scss */
+/* line 128, src/sass/components/_resume.scss */
 .web-tech .wp::before, .os .wp::before, .other-tech .wp::before {
   background-position: -2px -672px;
   width: 110px;
   height: 110px;
 }
 
-/* line 130, src/sass/components/_resume.scss */
+/* line 129, src/sass/components/_resume.scss */
 .web-tech .xen::before, .os .xen::before, .other-tech .xen::before {
   background-position: -114px -672px;
   width: 110px;
   height: 110px;
 }
 
-/* line 131, src/sass/components/_resume.scss */
+/* line 130, src/sass/components/_resume.scss */
 .web-tech .zabbix::before, .os .zabbix::before, .other-tech .zabbix::before {
   background-position: -226px -672px;
   width: 110px;
