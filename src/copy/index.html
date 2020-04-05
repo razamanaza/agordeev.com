@@ -8,6 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="apple-touch-icon" href="icon.png">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("footer-contact-form").submit();
+    }
+  </script>
 
   <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
   <link rel="stylesheet" href="css/main.min.css">
@@ -346,7 +352,7 @@
           <input type="text" id="footer-contact-subject" name="Subject" placeholder="subject" required>
           <label for="footer-contact-message">Message</label>
           <textarea id="footer-contact-message" placeholder="message" name="message"></textarea>
-          <button type="submit" class="button" value="Send">Send</button>
+          <button type="submit" class="button g-recaptcha" value="Send" data-sitekey="6Ldqy-YUAAAAAHTMacESMhEYj-RxkNSoGx3YPDDC" data-callback='onSubmit'>Send</button>
         </form>
       </div>
       <div class="column">
