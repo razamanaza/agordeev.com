@@ -906,27 +906,32 @@ a {
 }
 
 /* line 16, src/sass/components/_contact.scss */
+.contact button {
+  margin-top: 20px;
+}
+
+/* line 19, src/sass/components/_contact.scss */
 .contact button:hover {
   background-color: #333946;
 }
 
-/* line 19, src/sass/components/_contact.scss */
+/* line 22, src/sass/components/_contact.scss */
 .contact input:focus, .contact textarea:focus {
   border-color: #75a5e4;
 }
 
-/* line 22, src/sass/components/_contact.scss */
+/* line 25, src/sass/components/_contact.scss */
 .contact .online-links {
   text-align: center;
 }
 
-/* line 26, src/sass/components/_contact.scss */
+/* line 29, src/sass/components/_contact.scss */
 .contact .footer-contacts {
   max-width: 70%;
   margin: 0 auto 30px;
 }
 
-/* line 29, src/sass/components/_contact.scss */
+/* line 32, src/sass/components/_contact.scss */
 .contact .footer-contacts a {
   display: block;
   padding-left: 40px;
@@ -934,7 +939,7 @@ a {
   margin-bottom: 20px;
 }
 
-/* line 34, src/sass/components/_contact.scss */
+/* line 37, src/sass/components/_contact.scss */
 .contact .footer-contacts a::before {
   content: '';
   position: absolute;
@@ -945,22 +950,22 @@ a {
   background-position: center;
 }
 
-/* line 37, src/sass/components/_contact.scss */
+/* line 40, src/sass/components/_contact.scss */
 .contact .footer-contacts a:hover, .contact .footer-contacts a:active, .contact .footer-contacts a:focus {
   color: #ffffff;
 }
 
-/* line 41, src/sass/components/_contact.scss */
+/* line 44, src/sass/components/_contact.scss */
 .contact .footer-contacts .phone::before {
   background-image: url("../img/smartphone.svg");
 }
 
-/* line 44, src/sass/components/_contact.scss */
+/* line 47, src/sass/components/_contact.scss */
 .contact .footer-contacts .email::before {
   background-image: url("../img/email.svg");
 }
 
-/* line 47, src/sass/components/_contact.scss */
+/* line 50, src/sass/components/_contact.scss */
 .contact .footer-contacts .skype::before {
   background-image: url("../img/skype.svg");
 }
