@@ -8,13 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="apple-touch-icon" href="icon.png">
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <script>
-    function onSubmit(token) {
-      document.getElementById("footer-contact-form").submit();
-    }
-  </script>
-
   <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
   <link rel="stylesheet" href="css/main.min.css">
 
@@ -344,14 +337,13 @@
     <h2 class="section-header">Contact</h2>
     <div class="row">
       <div class="column">
-        <form id="footer-contact-form" class="footer-contact-form" action="https://formspree.io/xdolkyjz" method="POST">
+        <form id="footer-contact-form" class="footer-contact-form" action="https://usebasin.com/f/779d74b364b9" method="POST">
           <label for="footer-contact-name">Name</label>
           <input type="text" id="footer-contact-name" name="Name" placeholder="name" required>
           <label for="footer-contact-email">Email</label>
           <input type="email" id="footer-contact-email" name="Email" placeholder="email" required>
           <label for="footer-contact-message">Message</label>
           <textarea id="footer-contact-message" placeholder="message" name="message"></textarea>
-          <div class="g-recaptcha" data-sitekey="6LfQAswZAAAAAOcw9AKAy1ULKm0CU1BNEsJrwRBs"></div>
           <button type="submit" class="button" value="Send">Send</button>
         </form>
       </div>
